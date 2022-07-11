@@ -1,4 +1,3 @@
-//@ts-check
 (async ()=> {
   const myCart = [];
   const products = [];
@@ -12,7 +11,7 @@
     products.concat(data);
   }
   function getTotal() {
-    var total = 0;
+    let total = 0;
     for (let i = 0; i < products.length; i++) {
       total += products[i].prize;
     }
@@ -33,6 +32,6 @@
     name: 'Nicolas',
     lastName: 'Molina'
   }
-  const rta = `${person} +  ${limit}`;
-  console.log(rta);
+  // const rta = person +  limit;
+  // console.log(rta);
 });
